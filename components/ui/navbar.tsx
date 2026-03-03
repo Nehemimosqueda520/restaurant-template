@@ -1,14 +1,13 @@
-"use client";
+
 
 import { JSX } from "react/jsx-dev-runtime"
 import { Moon } from "@boxicons/react"
 import { Sun } from "lucide-react";
-import { useState } from "react";
 
 
 
 
-export function Navbar() {
+export function Navbar( {darkMode, setDarkMode}: {darkMode: boolean, setDarkMode: (value: boolean) => void}): JSX.Element {
     interface navbarList  {
         Home: string,
         Menu: string,
@@ -21,18 +20,11 @@ export function Navbar() {
 
     const navbarList: navbarList = {
         Home: "Home",
+        About: "About",
         Menu: "Menu",
         reservations: "Reservations",
         Contact: "Contact",
-        about: "About",
    }
-
-   
-   const [darkMode, setDarkMode] = useState(false);
-
-   
-
- 
     return (    
         <nav id="navbar" className="bg-secondary p-5 flex items-center justify-between w-full sm:w-full lg:pl-20 lg:pr-20 shadow-lg/10">
             <h1 className="text-3xl sm:text-2xl md:text-3xl font-poppins text-text ">DANLicious</h1>

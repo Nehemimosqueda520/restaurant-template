@@ -13,6 +13,8 @@
 :root {
   --secondary-color: #3F582A;
   --text-color: oklch(1 0 0);
+  --section-text-color-no-dark: #A67144;
+  --section-text-color: #A67144;
   --font-geist-mono: "Geist Mono", monospace;
   --font-poppins: "Poppins", sans-serif;
   --radius: 0.625rem;
@@ -54,6 +56,7 @@
   --color-background: var(--background);
   --color-secondary: var(--secondary-color);
   --color-text: var(--text-color);
+  --color-section-text: var(--section-text-color-no-dark);
   --font-poppins: var(--font-poppins);
   --font-mono: var(--font-geist-mono);
   --color-sidebar-ring: var(--sidebar-ring);
